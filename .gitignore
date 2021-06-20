@@ -139,3 +139,7 @@ cython_debug/
 
 # VS code
 settings.json
+
+# NOT FOR PUBLISH
+datastructures_initial/
+problem_solving_initial/

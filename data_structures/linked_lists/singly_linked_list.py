@@ -172,3 +172,46 @@ class SinglyLinkedList:
         while cur:
             print(cur.data)
             cur = cur.next
+
+    def is_palindrome(self):
+        len = self.length_itr()
+        last = self.head
+        nodes = []
+        while last:
+            nodes.append(last.data)
+            last = last.next
+        # NOTE go through the linked list
+        # # compare each node data with the opposite element pos in the list
+        # # it is enough to stop at the linked list middle element
+        print(nodes)
+        count = -1
+        cur = self.head
+        while count < len//2 +1:
+            print( nodes[count], cur.data)
+            print( nodes[count] == cur.data)
+            if nodes[count] == cur.data:
+                cur = cur.next
+                count -= 1
+            else:
+                return False
+        return True 
+    
+if __name__ == "__main__":
+    linked_list = SinglyLinkedList()
+    linked_list.append("R")
+    linked_list.append("A")
+    linked_list.append("C")
+    linked_list.append("E")
+    linked_list.append("C")
+    linked_list.append("A")
+    linked_list.append("R")
+
+    # print(linked_list.is_palindrome_using_str())
+    # print(linked_list.is_palindrome_using_stack())
+    print(linked_list.is_palindrome())
+
+    linked_list2 = SinglyLinkedList()
+    linked_list2.append("R")
+    linked_list2.append("A")
+    linked_list2.append("C")
+    linked_list2.append("E")
