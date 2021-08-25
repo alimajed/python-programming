@@ -16,7 +16,6 @@
 - Given a variable x is the width of the, and an input list contain number represents where and when the leaves will fall.
 - The time when a leaf fall is represented by the index, the value is when the leaf will falls.
 - Our goal is to return the time (index) when the path of the frog is open.
-- Our target is to find a solution with linear time complexity O(n) and linear space complexity O(n).
 
 
 ## Hints
