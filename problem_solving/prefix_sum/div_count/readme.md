@@ -24,3 +24,5 @@
 
 
 ## Code
+    def solution(a,b,k):
+        return floor(b/k) - ceil(a/k) + 1
