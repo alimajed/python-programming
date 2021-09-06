@@ -1,4 +1,4 @@
-from math import cail, floor 
+from math import ceil, floor 
 
 
 def solution(a,b,k):
